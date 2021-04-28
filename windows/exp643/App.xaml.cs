@@ -15,7 +15,7 @@ namespace exp643
             InstanceSettings.UseFastRefresh = false;
 #else
             JavaScriptBundleFile = "index";
-            InstanceSettings.UseWebDebugger = true;
+            // InstanceSettings.UseWebDebugger = true;
             InstanceSettings.UseFastRefresh = true;
 #endif
 

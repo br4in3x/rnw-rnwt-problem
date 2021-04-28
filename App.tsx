@@ -27,6 +27,14 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+function Test() {
+  return (
+    <View style={styles.test}>
+      <Text>test!</Text>
+    </View>
+  );
+}
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
@@ -73,6 +81,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Test />
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
@@ -109,6 +118,12 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  test: {
+    backgroundColor: '#3474eb',
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
+    padding: 15,
   },
 });
 
